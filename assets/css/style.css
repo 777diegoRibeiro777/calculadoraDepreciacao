@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("../img/red-and-blue-calculators-yxm0myfzuym67431.jpg");
+    background-size: cover;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+input{
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(224, 163, 211);
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+#submit{
+    background: rgb(0, 176, 0);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    width: 100px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    transform: scale(1.05);
+    background-color: rgb(2, 70, 2);
+}
+
+#submit-valorDepreciado {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#clean {
+    background: red;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    width: 100px;
+    cursor: pointer;
+}
+
+#clean:hover{
+    transform: scale(1.05);
+    background-color: rgb(127, 0, 0);
+}
+
+input::placeholder{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

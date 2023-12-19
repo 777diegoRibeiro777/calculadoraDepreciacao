@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" href="./assets/img/_3f137c92-28b3-4ca5-b25e-c98625a943f8-fotor-bg-remover-2023121818486.png" type="image/x-icon">
+        <title>Calculadora Depreciação</title>
+    </head>
+    <body>
+        <div id="card">
+            <img src="./assets/img/_3f137c92-28b3-4ca5-b25e-c98625a943f8-fotor-bg-remover-2023121818486.png" alt="">
+            <h2>Calculador De Depreciação</h2>
+            <label for="valorEquipamento">Valor Equipamento</label>
+            <input type="text" id="valorEquipamento" data-accepts-numbers="true" placeholder="Digite o valor">
+            <label for="valorSucata">Valor Sucata</label>
+            <input type="text" id="valorSucata" data-accepts-numbers="true" placeholder="Digite o valor">
+            <label for="vidaUtil">Vida Útil</label>
+            <input type="text" id="vidaUtil" data-accepts-numbers="true" placeholder="Digite o valor">
+            <label for="tempoUso">Tempo de Uso</label>
+            <input type="text" id="tempoUso" data-accepts-numbers="true" placeholder="Digite o valor">
+            <input type="submit" id="submit" value="Calcular" data-accepts-numbers="true" onclick="calcularDepreciacao()">
+            <input type="reset" id="clean" onclick="cleanAll()" value="Limpar">
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
