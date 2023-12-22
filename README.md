@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Neste projeto tem-se por objetivo o aprendizado do funcionamento de uma API e como realizar o consumo da mesma. Dessa forma, foi desenvolvido um site utilizando HTML, CSS e JS onde a partir de um CEP outras informações podem ser descobertas. Sendo que, toda a busca dos dados só foi possível devido a utilização da API ViaCEP. 
+Neste projeto tem-se por objetivo o aprendizado de funções matemáticas no JAVASCRIPT, bem como o uso de lógica para implementar certos filtros. Dessa forma, foi desenvolvido um site utilizando HTML, CSS e JS onde a partir da entrada e manipulação de informações outras podem ser obtidas ao final. 
 
 ## 🔖 Layout
 
