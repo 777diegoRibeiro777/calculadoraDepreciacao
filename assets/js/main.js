@@ -6,11 +6,14 @@ const calcularDepreciacao = () => {
   var vidaUtil = parseFloat(document.getElementById("vidaUtil").value);
   var tempoDeUso = parseFloat(document.getElementById("tempoUso").value);
 
-  var vidaTotal = vidaUtil * 12;
-  var taxaDepreciacaoAnual = (valorEquipamento - valorSucata) / vidaTotal;
+  if (tempoDeUso > vidaUtil) {
+    alert("O tempo de uso não pode ser maior que a vida útil.");
+    return null;
+}
+
+  var taxaDepreciacaoAnual = (valorEquipamento - valorSucata) / vidaUtil;
   var depreciacaoTotal = taxaDepreciacaoAnual * tempoDeUso;
-  var depreciacaoMensal = taxaDepreciacaoAnual / tempoDeUso;
-  var valorContabilFinal = valorEquipamento - valorSucata;
+  var valorContabilFinal = valorEquipamento - depreciacaoTotal;
 
   if (
     isNaN(valorEquipamento) ||
@@ -23,12 +26,15 @@ const calcularDepreciacao = () => {
 }
 
   var resultadoAnual =
-    "Depreciação Total Anual: R$" + depreciacaoTotal.toFixed(2);
-  var resultadoMensal = "Depreciação mensal: R$" + depreciacaoMensal.toFixed(2);
+    "Depreciação Anual: R$" + taxaDepreciacaoAnual.toFixed(2);
+  
+    var resultadoDepreciacaoTotal =
+    "Depreciação Acumulada: R$" + depreciacaoTotal.toFixed(2);
+  
   var resultadoContabilfinal =
-    "Valor Contábil Final: R$" + valorContabilFinal.toFixed(2);
+    "Valor Contábil: R$" + valorContabilFinal.toFixed(2);
 
-    alert(`RESULTADO: \n ${resultadoAnual},\n ${resultadoMensal},\n ${resultadoContabilfinal}`)
+    alert(`RESULTADO: \n ${resultadoAnual}\n ${resultadoDepreciacaoTotal}\n ${resultadoContabilfinal}`)
 
   return;
 };
